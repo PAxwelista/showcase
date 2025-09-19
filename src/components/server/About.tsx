@@ -6,7 +6,7 @@ export const About = async () => {
     const { t } = await getT("about");
 
     return (
-        <div className="sm:flex p-3 bg-white min-h-screen pt-20 items-center">
+        <div className="sm:flex p-3 min-h-screen pt-20 items-center">
             <Image
                 src={profile}
                 width={100}

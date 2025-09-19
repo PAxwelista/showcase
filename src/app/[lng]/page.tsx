@@ -1,4 +1,4 @@
-import { Header } from "@/components/client";
+import { Header, Projects } from "@/components/client";
 import { About } from "@/components/server";
 
 export default function Page() {
@@ -6,6 +6,7 @@ export default function Page() {
         <main>
             <Header />
             <About />
+            <Projects/>
         </main>
     );
 }

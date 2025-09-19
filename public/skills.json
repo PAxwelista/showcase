@@ -1,0 +1,11 @@
+[
+    { "name": "NextJs", "imageName": "nextjs.png" },
+    { "name": "NestJs", "imageName": "nestjs.svg" },
+    { "name": "Tailwind", "imageName": "tailwind.png" },
+    { "name": "TypeScript", "imageName": "typescript.svg" },
+    { "name": "CSS", "imageName": "css.png" },
+    { "name": "React", "imageName": "react.png" },
+    { "name": "React Native", "imageName": "react-native.png" },
+    { "name": "MongoDB", "imageName": "mongodb.png" },
+    { "name": "PostgreSQL", "imageName": "postgresql.png" }
+]
