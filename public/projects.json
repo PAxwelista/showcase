@@ -8,7 +8,8 @@
         "en" : "A app tha help to deliver everything.",
         "fr" : "Une application qui permet de délivrer nimporte quoi."
     },
-    "webProject":false
+    "webProject":false,
+    "skills":["React Native","MongoDB","CSS","TypeScript"]
 },{
     "id" : 2,
     "title":{
@@ -19,7 +20,8 @@
         "en" : "A website with the popular battal naval game.",
         "fr" : "Un site web avec le jeux populaire : La bataille navale."
     },
-    "webProject":true
+    "webProject":true,
+    "skills":["NextJs","TypeScript","CSS","React"]
 },{
     "id" : 3,
     "title":{
@@ -30,5 +32,6 @@
         "en" : "A API that can save a inventory. It's usefull to deploy for a dev.",
         "fr" : "Une API qui sauvegarder un inventaire. Est utile pour le déployement par un dev."
     },
-    "webProject":true
+    "webProject":true,
+    "skills":["NestJs","TypeScript","PostgreSQL"]
 }  ]

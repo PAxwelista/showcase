@@ -5,25 +5,52 @@ import Image from "next/image";
 import React from "react";
 import { Tooltip } from "react-tooltip";
 
-export const Skills = () => {
-    const skills = skillsJson.map(skill => (
-        <React.Fragment key={skill.name}>
-            <button
-                data-tooltip-id="my-tooltip"
-                data-tooltip-content={skill.name}
-                data-tooltip-place="top"
-                className="m-2 cursor-pointer bg-red-100 w-[50px] h-[50px]"
-            >
-                <Image
-                    src={require(`/public/${skill.imageName}`)}
-                    alt={skill.name}
-                    width={50}
-                    height={50}
-                />
-            </button>
-            <Tooltip id="my-tooltip" />
-        </React.Fragment>
-    ));
+type Props = {
+    selectSkills: string[];
+    onSelectSkill: (skill: string) => void;
+    projectsSkills: string[][];
+};
 
-    return <div className="m-5">{skills}</div>;
+export const Skills = ({ selectSkills, projectsSkills, onSelectSkill }: Props) => {
+    const skillsName = skillsJson.map(skill => skill.name);
+
+    const projectsAvailable = projectsSkills.filter(projectSkills =>
+        selectSkills.every(skill => projectSkills.includes(skill))
+    );
+
+    const possibleSkills = skillsName.filter(skillName =>
+        projectsAvailable.some(projectAvailable => projectAvailable.includes(skillName))
+    );
+
+    const skills = skillsJson.map(skill => {
+        const skillName = skill.name;
+        const isSelect = selectSkills.includes(skillName);
+        const isActive = possibleSkills.includes(skillName);
+
+        return (
+            <React.Fragment key={skillName}>
+                <button
+                    data-tooltip-id="my-tooltip"
+                    data-tooltip-content={skillName}
+                    data-tooltip-place="top"
+                    className={`m-2 ${isActive && "cursor-pointer"} w-[50px] h-[50px] ${
+                        isSelect && "shadow-[0px_4px] shadow-red-600"
+                    }`}
+                    onClick={() => onSelectSkill(skillName)}
+                    disabled={!isActive}
+                >
+                    <Image
+                        src={require(`/public/${skill.imageName}`)}
+                        alt={skillName}
+                        width={50}
+                        height={50}
+                        className={`${!isActive && "grayscale"}`}
+                    />
+                </button>
+                <Tooltip id="my-tooltip" />
+            </React.Fragment>
+        );
+    });
+
+    return <div className="flex m-5">{skills}</div>;
 };
