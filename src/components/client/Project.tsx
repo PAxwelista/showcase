@@ -1,6 +1,5 @@
 import { PhoneMockup, WebMockup } from "./";
 import Image from "next/image";
-import picture from "@/../public/profile.jpg";
 import { motion } from "motion/react";
 
 type Props = {
@@ -9,10 +8,11 @@ type Props = {
     btnTitle: string;
     onClick: React.MouseEventHandler;
     webProject: boolean;
+    picturesUrl: string[];
 };
 
 export const Project = (props: Props) => {
-    const { title, description, btnTitle, onClick, webProject } = props;
+    const { title, description, btnTitle, onClick, webProject, picturesUrl } = props;
 
     const handleOnClick = (event: React.MouseEvent) => {
         onClick(event);
@@ -36,25 +36,7 @@ export const Project = (props: Props) => {
             </motion.div>
             <div className="flex flex-1">
                 <div className="relative flex-3 w-full h-screen">
-                    {webProject ? (
-                        <WebMockup>
-                            <Image
-                                src={picture}
-                                fill
-                                alt="pc"
-                                objectFit="cover"
-                            />
-                        </WebMockup>
-                    ) : (
-                        <PhoneMockup>
-                            <Image
-                                src={picture}
-                                fill
-                                objectFit="cover"
-                                alt="pc"
-                            />
-                        </PhoneMockup>
-                    )}
+                    {webProject ? <WebMockup images={picturesUrl} /> : <PhoneMockup images={picturesUrl} />}
                     <div className="absolute flex w-full h-full">
                         <div className="flex-1 "></div>
                         <div className="flex-1 bg-blue-300 -z-10"></div>

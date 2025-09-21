@@ -9,7 +9,8 @@
         "fr" : "Une application qui permet de délivrer nimporte quoi."
     },
     "webProject":false,
-    "skills":["React Native","MongoDB","CSS","TypeScript"]
+    "skills":["React Native","MongoDB","CSS","TypeScript"],
+    "picturesUrl" : ["/delithi/add-order.png" ,"/delithi/detail-delivery.png" ,"/delithi/detail-order.png" ,"/delithi/map.png" ]
 },{
     "id" : 2,
     "title":{
@@ -21,7 +22,8 @@
         "fr" : "Un site web avec le jeux populaire : La bataille navale."
     },
     "webProject":true,
-    "skills":["NextJs","TypeScript","CSS","React"]
+    "skills":["NextJs","TypeScript","CSS","React"],
+    "picturesUrl" : []
 },{
     "id" : 3,
     "title":{
@@ -33,5 +35,19 @@
         "fr" : "Une API qui sauvegarder un inventaire. Est utile pour le déployement par un dev."
     },
     "webProject":true,
-    "skills":["NestJs","TypeScript","PostgreSQL"]
-}  ]
+    "skills":["NestJs","TypeScript","PostgreSQL"],
+    "picturesUrl" : []
+} ,{
+    "id" : 4,
+    "title":{
+        "en" : "Showcase",
+        "fr" : "Portfolio"
+    },
+    "description": {
+        "en" : "This webSite that show informations about me and show my projects.",
+        "fr" : "Ce site internet qui montre mes informations et mes projets."
+    },
+    "webProject":true,
+    "skills":["Tailwind","TypeScript","React","CSS","NextJs"],
+    "picturesUrl" : []
+} ]

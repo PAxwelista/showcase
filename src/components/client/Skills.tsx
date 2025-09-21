@@ -33,14 +33,14 @@ export const Skills = ({ selectSkills, projectsSkills, onSelectSkill }: Props) =
                     data-tooltip-id="my-tooltip"
                     data-tooltip-content={skillName}
                     data-tooltip-place="top"
-                    className={`m-2 ${isActive && "cursor-pointer"} w-[50px] h-[50px] ${
+                    className={`m-2 duration-200 ease-in-out ${isActive && "cursor-pointer hover:scale-110"} w-[50px] h-[50px] ${
                         isSelect && "shadow-[0px_4px] shadow-red-600"
                     }`}
                     onClick={() => onSelectSkill(skillName)}
                     disabled={!isActive}
                 >
                     <Image
-                        src={require(`/public/${skill.imageName}`)}
+                        src={`/${skill.pictureName}`}
                         alt={skillName}
                         width={50}
                         height={50}

@@ -30,6 +30,7 @@ export const Projects = () => {
             btnTitle={t("see-more")}
             onClick={() => console.log("click aciic")}
             webProject={project.webProject}
+            picturesUrl={project.picturesUrl}
         />
     ));
 

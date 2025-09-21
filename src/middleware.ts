@@ -3,6 +3,7 @@ import acceptLanguage from "accept-language";
 import { fallbackLng, languages, cookieName, headerName } from "./app/i18n/settings";
 
 acceptLanguage.languages(languages);
+const PUBLIC_FILE = /\.(.*)$/;
 
 export const config = {
     // Avoid matching for static files, API routes, etc.
@@ -21,6 +22,10 @@ export function middleware(req: NextRequest) {
     if (!lng) lng = acceptLanguage.get(req.headers.get("Accept-Language"));
     // Default to fallback language if still undefined
     if (!lng) lng = fallbackLng;
+
+    if (PUBLIC_FILE.test(req.nextUrl.pathname)) {
+        return;
+    }
 
     // Check if the language is already in the path
     const lngInPath = languages.find(loc => req.nextUrl.pathname.startsWith(`/${loc}`));

@@ -2,10 +2,10 @@ import Image from "next/image";
 import webOutline from "@/../public/web-outline.png";
 import { motion } from "motion/react";
 type Props = {
-    children: React.ReactNode;
+    images: string[];
 };
 
-export const WebMockup = ({ children }: Props) => {
+export const WebMockup = ({ images }: Props) => {
     return (
         <motion.div
             initial={{ opacity: 0, x: 100 }}
@@ -14,7 +14,7 @@ export const WebMockup = ({ children }: Props) => {
                 x: 0,
             }}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            viewport={{once:true, amount: 0.5 }}
+            viewport={{ once: true, amount: 0.5 }}
             className="absolute w-full h-screen flex items-center justify-center"
         >
             <div className="absolute w-full max-h-[1000px] aspect-[9/19.5]">
@@ -26,7 +26,23 @@ export const WebMockup = ({ children }: Props) => {
                     priority
                 />
                 <div className="absolute top-[31%] left-[1.5%] right-[1.2%] bottom-[29%] overflow-hidden z-10">
-                    {children}
+                <motion.div
+                        className="flex h-full cursor-grab"
+                        drag="x"
+                        dragConstraints={{ left: -((images.length - 1) * 320), right: 0 }}
+                        transition={{ type: "spring", stiffness: 200, damping: 30 }}
+                    >
+                        {images.map((image, i) => (
+                            <Image
+                                key={i}
+                                src={image}
+                                alt={`screen-${i}`}
+                                width={320}
+                                height={640}
+                                className="w-[320px] h-full object-cover flex-shrink-0"
+                            />
+                        ))}
+                    </motion.div>
                 </div>
             </div>
         </motion.div>
