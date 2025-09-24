@@ -1,9 +1,12 @@
-import { getT } from "@/app/i18n";
+"use client"
+
 import Image from "next/image";
 import profile from "@/../public/profile.jpg"
+import { useT } from "@/app/i18n/client";
 
-export const About = async () => {
-    const { t } = await getT("about");
+export const About = () => {
+    const { t } = useT("about");
+    
 
     return (
         <div className="sm:flex p-3 min-h-screen pt-20 items-center">

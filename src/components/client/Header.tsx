@@ -4,16 +4,17 @@ import { useT } from "@/app/i18n/client";
 import { DropDown, HeaderBtn } from ".";
 import { useIsTopScroll } from "@/hooks/useIsTopScroll";
 
-export const Header = () => {
+type Props = { onClickAbout: () => void; onClickProject: () => void; onClickContact: () => void };
+
+export const Header = ({ onClickAbout, onClickProject, onClickContact }:Props) => {
     const { t } = useT("header");
     const isTop = useIsTopScroll();
-    
+
     const HeaderBtns = () => {
         return (
             <>
-                <HeaderBtn>{t("projects")}</HeaderBtn>
-                <HeaderBtn>{t("labs")}</HeaderBtn>
-                <HeaderBtn>{t("contact")}</HeaderBtn>
+                <HeaderBtn onClick={onClickProject}>{t("projects")}</HeaderBtn>
+                <HeaderBtn onClick={onClickContact}>{t("contact")}</HeaderBtn>
             </>
         );
     };
@@ -24,7 +25,7 @@ export const Header = () => {
                 isTop ? "bg-blue-400 p-5" : "bg-blue-600 p-2"
             }`}
         >
-            <HeaderBtn onClick={() => console.log("cli")}>Axel Madotto</HeaderBtn>
+            <HeaderBtn onClick={onClickAbout}>Axel Madotto</HeaderBtn>
 
             <div className="block md:hidden">
                 <DropDown>

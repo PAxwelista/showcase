@@ -1,7 +1,9 @@
-import { getT } from "@/app/i18n";
+"use client";
 
-export const Contact = async () => {
-    const { t } = await getT("contact");
+import { useT } from "@/app/i18n/client";
+
+export const Contact = () => {
+    const { t } = useT("contact");
     return (
         <div className="min-h-screen">
             <h2>{t("contact")}</h2>
@@ -10,7 +12,9 @@ export const Contact = async () => {
                 <li>
                     <a href="https://www.linkedin.com/in/axel-madotto-16391b125">{t("linkedin")}</a>
                 </li>
-                <li><a href="https://github.com/PAxwelista">{t("github")}</a></li>
+                <li>
+                    <a href="https://github.com/PAxwelista">{t("github")}</a>
+                </li>
             </ul>
         </div>
     );
