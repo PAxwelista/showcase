@@ -1,0 +1,15 @@
+{
+    "inventory_header" : "API inventaire",
+    "app": "Application",
+    "user": "Utilisateur",
+    "inventory": "Inventaire",
+    "empty_user": "Aucun utilisateur dans cette application",
+    "empty_inventory": "Pas d'inventaire dans cette application avec cet utilisateur",
+    "new_item" : "Nouvel object",
+    "name":"Nom",
+    "quantity" : "Quantité",
+    "app_user_id" : "Utiliteur de l'app",
+    "add" : "Ajouter",
+    "alert_max_items" : "Maximum d'items atteint pour cette démo",
+    "alert_max_appUsers" : "Maximum d'utilisateur atteint pour cette démo"
+}

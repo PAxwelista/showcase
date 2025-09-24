@@ -1,0 +1,15 @@
+{
+    "inventory_header" : "Inventory API",
+    "app": "App",
+    "user": "User",
+    "inventory": "Inventory",
+    "empty_user": "No users in this app",
+    "empty_inventory": "No inventory in this app with this user",
+    "new_item" : "New item",
+    "name":"Name",
+    "quantity" : "Quantity",
+    "app_user_id" : "App user",
+    "add" : "Add",
+    "alert_max_items" : "Max items for this user for this demo",
+    "alert_max_appUsers" : "Max users for this demo"
+}

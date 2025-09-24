@@ -3,11 +3,11 @@
 import { useT } from "@/app/i18n/client";
 import { DropDown, HeaderBtn } from ".";
 import { useIsTopScroll } from "@/hooks/useIsTopScroll";
-import Image from "next/image";
+
 export const Header = () => {
     const { t } = useT("header");
     const isTop = useIsTopScroll();
-    const test = "css";
+    
     const HeaderBtns = () => {
         return (
             <>
@@ -29,7 +29,7 @@ export const Header = () => {
             <div className="block md:hidden">
                 <DropDown>
                     <HeaderBtns />
-                </DropDown>{" "}
+                </DropDown>
             </div>
 
             <div className="flex hidden md:block">
