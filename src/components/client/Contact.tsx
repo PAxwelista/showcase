@@ -7,7 +7,7 @@ export const Contact = () => {
     return (
         <div className="min-h-screen">
             <h2>{t("contact")}</h2>
-            <ul className="m-5">
+            <ul className="flex-col flex justify-center items-center m-5">
                 <li>{t("email")} : madotto.axel@gmail.com</li>
                 <li>
                     <a href="https://www.linkedin.com/in/axel-madotto-16391b125">{t("linkedin")}</a>

@@ -18,17 +18,17 @@ export const Projects = () => {
         );
     };
 
-    const filterProjects = jsonProjects.filter(project=>selectSkills.every(skill=>project.skills.includes(skill)))
+    const filterProjects = jsonProjects.filter(project => selectSkills.every(skill => project.skills.includes(skill)));
 
-    const nbProjectsFilters = filterProjects.length
+    const nbProjectsFilters = filterProjects.length;
 
     const projects = filterProjects.map(project => (
         <Project
             key={project.id}
             title={project.title[locale]}
             description={project.description[locale]}
-            btnTitle={t("see-more")}
-            onClick={() => console.log("click aciic")}
+            btnTitle={t("see_project")}
+            href={project.href || null}
             webProject={project.webProject}
             picturesUrl={project.picturesUrl}
         />
@@ -37,7 +37,14 @@ export const Projects = () => {
     return (
         <div>
             <h2>{t("projects")}</h2>
-            <Skills selectSkills={selectSkills} onSelectSkill={handleClickSkill} projectsSkills={jsonProjects.map(project=>project.skills)}/><p>{t("nb-projects")} : {nbProjectsFilters}</p>
+            <Skills
+                selectSkills={selectSkills}
+                onSelectSkill={handleClickSkill}
+                projectsSkills={jsonProjects.map(project => project.skills)}
+            />
+            <p>
+                {t("nb_projects")} : {nbProjectsFilters}
+            </p>
             {projects}
         </div>
     );

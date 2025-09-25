@@ -1,6 +1,6 @@
 "use client";
 
-import skillsJson from "@/../public/skills.json";
+import skillsJson from "@/../public/skills/skills.json";
 import Image from "next/image";
 import React from "react";
 import { Tooltip } from "react-tooltip";
@@ -40,7 +40,7 @@ export const Skills = ({ selectSkills, projectsSkills, onSelectSkill }: Props) =
                     disabled={!isActive}
                 >
                     <Image
-                        src={`/${skill.pictureName}`}
+                        src={`/skills/images/${skill.pictureName}`}
                         alt={skillName}
                         width={50}
                         height={50}

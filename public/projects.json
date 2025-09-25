@@ -1,53 +1,64 @@
-[{
-    "id" : 1,
-    "title":{
-        "en" : "DeliThi",
-        "fr" : "DeliThi"
+[
+    {
+        "id": 1,
+        "title": {
+            "en": "DeliThi",
+            "fr": "DeliThi"
+        },
+        "description": {
+            "en": "A app tha help to deliver everything.",
+            "fr": "Une application qui permet de délivrer nimporte quoi."
+        },
+        "webProject": false,
+        "skills": ["React Native", "MongoDB", "CSS", "TypeScript"],
+        "picturesUrl": [
+            "/delithi/add-order.png",
+            "/delithi/detail-delivery.png",
+            "/delithi/detail-order.png",
+            "/delithi/map.png"
+        ]
     },
-    "description": {
-        "en" : "A app tha help to deliver everything.",
-        "fr" : "Une application qui permet de délivrer nimporte quoi."
+    {
+        "id": 2,
+        "title": {
+            "en": "Naval battle",
+            "fr": "Bataille navale"
+        },
+        "description": {
+            "en": "A website with the popular battal naval game.",
+            "fr": "Un site web avec le jeux populaire : La bataille navale."
+        },
+        "webProject": true,
+        "skills": ["NextJs", "TypeScript", "CSS", "React"],
+        "picturesUrl": ["/naval_battle/game.png", "/naval_battle/home.png", "/naval_battle/join_game.png"]
     },
-    "webProject":false,
-    "skills":["React Native","MongoDB","CSS","TypeScript"],
-    "picturesUrl" : ["/delithi/add-order.png" ,"/delithi/detail-delivery.png" ,"/delithi/detail-order.png" ,"/delithi/map.png" ]
-},{
-    "id" : 2,
-    "title":{
-        "en" : "Naval battle",
-        "fr" : "Bataille navale"
+    {
+        "id": 3,
+        "title": {
+            "en": "API inventory",
+            "fr": "API d'inventaire"
+        },
+        "description": {
+            "en": "A API that can save a inventory. It's usefull to deploy for a dev.",
+            "fr": "Une API qui sauvegarder un inventaire. Est utile pour le déployement par un dev."
+        },
+        "webProject": true,
+        "skills": ["NestJs", "TypeScript", "PostgreSQL"],
+        "picturesUrl": [],
+        "href": "/inventory"
     },
-    "description": {
-        "en" : "A website with the popular battal naval game.",
-        "fr" : "Un site web avec le jeux populaire : La bataille navale."
-    },
-    "webProject":true,
-    "skills":["NextJs","TypeScript","CSS","React"],
-    "picturesUrl" : []
-},{
-    "id" : 3,
-    "title":{
-        "en" : "API inventory",
-        "fr" : "API d'inventaire"
-    },
-    "description": {
-        "en" : "A API that can save a inventory. It's usefull to deploy for a dev.",
-        "fr" : "Une API qui sauvegarder un inventaire. Est utile pour le déployement par un dev."
-    },
-    "webProject":true,
-    "skills":["NestJs","TypeScript","PostgreSQL"],
-    "picturesUrl" : []
-} ,{
-    "id" : 4,
-    "title":{
-        "en" : "Showcase",
-        "fr" : "Portfolio"
-    },
-    "description": {
-        "en" : "This webSite that show informations about me and show my projects.",
-        "fr" : "Ce site internet qui montre mes informations et mes projets."
-    },
-    "webProject":true,
-    "skills":["Tailwind","TypeScript","React","CSS","NextJs"],
-    "picturesUrl" : []
-} ]
+    {
+        "id": 4,
+        "title": {
+            "en": "Showcase",
+            "fr": "Portfolio"
+        },
+        "description": {
+            "en": "This webSite that show informations about me and show my projects.",
+            "fr": "Ce site internet qui montre mes informations et mes projets."
+        },
+        "webProject": true,
+        "skills": ["Tailwind", "TypeScript", "React", "CSS", "NextJs"],
+        "picturesUrl": []
+    }
+]
