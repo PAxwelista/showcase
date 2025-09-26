@@ -1,5 +1,5 @@
-import { Btn, PhoneMockup, WebMockup } from "./";
-import Image from "next/image";
+import { PhoneMockup, WebMockup } from "./";
+
 import { motion } from "motion/react";
 
 type Props = {

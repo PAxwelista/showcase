@@ -1,11 +1,21 @@
 "use client";
 
 import { useT } from "@/app/i18n/client";
+import { motion } from "motion/react";
 
 export const Contact = () => {
     const { t } = useT("contact");
     return (
-        <div className="min-h-screen">
+        <motion.div
+            initial={{ opacity: 0, x: -40 }}
+            whileInView={{
+                opacity: 1,
+                x: 0,
+            }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            viewport={{ once: true, amount: 0.5 }}
+            className="min-h-screen"
+        >
             <h2>{t("contact")}</h2>
             <ul className="flex-col flex justify-center items-center m-5">
                 <li>{t("email")} : madotto.axel@gmail.com</li>
@@ -16,6 +26,6 @@ export const Contact = () => {
                     <a href="https://github.com/PAxwelista">{t("github")}</a>
                 </li>
             </ul>
-        </div>
+        </motion.div>
     );
 };
