@@ -16,39 +16,38 @@
     :root {
         --background: #0a0a0a;
         --foreground: #ededed;
-        
     }
 }
 
 body {
     background: var(--background);
     color: var(--foreground);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: sans-serif, Arial, Helvetica;
 }
 
-h2{
+h2 {
     text-align: center;
-    font-size:2rem;
-    padding:20px;
+    font-size: 2rem;
+    padding: 20px;
     font-weight: 400;
 }
 
 .loader {
     width: 48px;
     height: 48px;
-    border: 5px solid #FFF;
+    border: 5px solid #fff;
     border-bottom-color: transparent;
     border-radius: 50%;
     display: inline-block;
     box-sizing: border-box;
     animation: rotation 1s linear infinite;
-    }
+}
 
-    @keyframes rotation {
+@keyframes rotation {
     0% {
         transform: rotate(0deg);
     }
     100% {
         transform: rotate(360deg);
     }
-    } 
+}

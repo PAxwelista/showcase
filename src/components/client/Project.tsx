@@ -28,7 +28,7 @@ export const Project = (props: Props) => {
             >
                 <h3>{title}</h3>
                 <p>{description}</p>
-                {href && <a className="self-end cursor-pointer p-2 px-4 bg-blue-500 rounded-2xl duration-200 active:scale-95 hover:scale-110" href={href}>{btnTitle}</a>}
+                {href && <a className="text-white self-end cursor-pointer p-2 px-4 bg-blue-500 rounded-2xl duration-200 active:scale-95 hover:scale-110" href={href}>{btnTitle}</a>}
             </motion.div>
             <div className="flex flex-1">
                 <div className="relative flex-3 w-full h-screen">

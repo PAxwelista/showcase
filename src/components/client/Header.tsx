@@ -21,7 +21,7 @@ export const Header = ({ onClickAbout, onClickProject, onClickContact }:Props) =
 
     return (
         <div
-            className={`duration-300 ease-in fixed z-50 flex justify-between w-screen px-5 ${
+            className={`text-white duration-300 ease-in fixed z-50 flex justify-between w-screen px-5 ${
                 isTop ? "bg-blue-400 p-5" : "bg-blue-600 p-2"
             }`}
         >
