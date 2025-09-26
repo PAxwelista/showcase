@@ -15,7 +15,7 @@ export const Project = (props: Props) => {
     const { title, description, btnTitle, href, webProject, picturesUrl } = props;
 
     return (
-        <div className="flex flex-col md:flex-row">
+        <div className="flex flex-col lg:flex-row">
             <motion.div
                 initial={{ opacity: 0, x: -40 }}
                 whileInView={{
@@ -39,7 +39,7 @@ export const Project = (props: Props) => {
                         <div className="flex-1 bg-blue-300 -z-10"></div>
                     </div>
                 </div>
-                <div className="flex-1 bg-blue-300 hidden md:block"></div>
+                <div className="flex-1 bg-blue-300 hidden lg:block"></div>
             </div>
         </div>
     );
