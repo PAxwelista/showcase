@@ -52,5 +52,5 @@ export const Skills = ({ selectSkills, projectsSkills, onSelectSkill }: Props) =
         );
     });
 
-    return <div className="flex m-5">{skills}</div>;
+    return <div className="flex flex-wrap m-5 justify-center">{skills}</div>;
 };
