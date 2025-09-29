@@ -42,7 +42,7 @@ export const Projects = () => {
                 onSelectSkill={handleClickSkill}
                 projectsSkills={jsonProjects.map(project => project.skills)}
             />
-            <p>
+            <p className="p-4 text-center">
                 {t("nb_projects")} : {nbProjectsFilters}
             </p>
             {projects}
