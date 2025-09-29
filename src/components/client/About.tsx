@@ -3,6 +3,7 @@
 import Image from "next/image";
 import profile from "@/../public/profile.jpg";
 import { useT } from "@/app/i18n/client";
+import { TargetBlur } from "./";
 
 export const About = () => {
     const { t } = useT("about");
@@ -21,6 +22,7 @@ export const About = () => {
                 />
                 <p className="p-3 sm:p-20">{t("paragraphe-about")}</p>
             </div>
+            {/* <TargetBlur/> */}
         </div>
     );
 };
