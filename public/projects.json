@@ -30,7 +30,8 @@
         },
         "webProject": true,
         "skills": ["NextJs", "TypeScript", "CSS", "React", "Express"],
-        "picturesUrl": ["/naval_battle/game.png", "/naval_battle/home.png", "/naval_battle/join_game.png"]
+        "picturesUrl": ["/naval_battle/game.png", "/naval_battle/home.png", "/naval_battle/join_game.png"],
+        "href": "https://naval-battle-frontend.vercel.app"
     },
     {
         "id": 3,
