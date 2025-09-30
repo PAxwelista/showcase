@@ -20,10 +20,10 @@ export const Contact = () => {
             <ul className="flex-col flex justify-center items-center m-5">
                 <li>{t("email")} : madotto.axel@gmail.com</li>
                 <li>
-                    <a href="https://www.linkedin.com/in/axel-madotto-16391b125">{t("linkedin")}</a>
+                    <a className="underline text-blue-400 hover:text-blue-300" href="https://www.linkedin.com/in/axel-madotto-16391b125">{t("linkedin")}</a>
                 </li>
                 <li>
-                    <a href="https://github.com/PAxwelista">{t("github")}</a>
+                    <a className="underline text-blue-400 hover:text-blue-300"  href="https://github.com/PAxwelista">{t("github")}</a>
                 </li>
             </ul>
         </motion.div>
