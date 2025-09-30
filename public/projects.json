@@ -6,8 +6,8 @@
             "fr": "DeliThi"
         },
         "description": {
-            "en": "A app tha help to deliver everything.",
-            "fr": "Une application qui permet de délivrer nimporte quoi."
+            "en": "This application allows you to register clients, manage their orders by adding the desired products, and organize deliveries by automatically optimizing routes within a given area to save time and reduce costs.",
+            "fr": "Cette application permet d’enregistrer les clients, de gérer leurs commandes en ajoutant facilement les produits souhaités et d’organiser les livraisons en optimisant automatiquement les trajets dans une zone donnée afin de gagner du temps et de réduire les coûts."
         },
         "webProject": false,
         "skills": ["React Native", "MongoDB", "CSS", "TypeScript"],
@@ -25,8 +25,8 @@
             "fr": "Bataille navale"
         },
         "description": {
-            "en": "A website with the popular battal naval game.",
-            "fr": "Un site web avec le jeux populaire : La bataille navale."
+            "en": "This website offers an online battleship experience where players can compete in real time, strategically place their ships, and try to sink their opponent’s fleet through an interactive and dynamic interface.",
+            "fr": "Ce site web propose une expérience de bataille navale en ligne où les joueurs peuvent s’affronter en temps réel, placer stratégiquement leurs navires et tenter de couler ceux de l’adversaire dans une interface interactive et dynamique."
         },
         "webProject": true,
         "skills": ["NextJs", "TypeScript", "CSS", "React"],
@@ -39,8 +39,8 @@
             "fr": "API d'inventaire"
         },
         "description": {
-            "en": "A API that can save a inventory. It's usefull to deploy for a dev.",
-            "fr": "Une API qui sauvegarder un inventaire. Est utile pour le déployement par un dev."
+            "en": "This inventory API allows developers to integrate an API key and seamlessly access all the inventories of their application, providing a centralized and simple solution to manage and track stock.",
+            "fr": "Cette API d’inventaire permet à un développeur d’intégrer une clé d’API et d’accéder facilement à l’ensemble des inventaires de son application, offrant une solution centralisée et simple pour gérer et consulter les stocks."
         },
         "webProject": true,
         "skills": ["NestJs", "TypeScript", "PostgreSQL"],
@@ -54,8 +54,8 @@
             "fr": "Portfolio"
         },
         "description": {
-            "en": "This webSite that show informations about me and show my projects.",
-            "fr": "Ce site internet qui montre mes informations et mes projets."
+            "en": "This portfolio website showcases my development projects through a clean and modern interface, allowing visitors to explore my work, skills, and background in a professional and interactive way.",
+            "fr": "Ce site web portfolio présente mes projets de développement à travers une interface claire et moderne, permettant de découvrir mon travail, mes compétences et mon parcours de manière professionnelle et interactive."
         },
         "webProject": true,
         "skills": ["Tailwind", "TypeScript", "React", "CSS", "NextJs"],

@@ -24,16 +24,25 @@ export const Project = (props: Props) => {
                 }}
                 transition={{ duration: 0.8, ease: "easeOut" }}
                 viewport={{ once: true, amount: 0.5 }}
-                className="flex flex-col flex-1 p-5"
+                className="flex flex-col flex-1 lg:p-15 p-5"
             >
                 <h3>{title}</h3>
-                <p>{description}</p>
-                {href && <a className="text-white self-end cursor-pointer p-2 px-4 bg-blue-500 rounded-2xl duration-200 active:scale-95 hover:scale-110" href={href}>{btnTitle}</a>}
+                <div className="flex flex-col flex-1 justify-center items-center">
+                    <p className="lg:pr-40 pb-20">{description}</p>
+                    {href && (
+                        <a
+                            className="text-white self-end cursor-pointer p-2 px-4 bg-blue-500 rounded-2xl duration-200 active:scale-95 hover:scale-110"
+                            href={href}
+                        >
+                            {btnTitle}
+                        </a>
+                    )}
+                </div>
             </motion.div>
             <div className="flex flex-1">
                 <div className="relative flex-3 w-full h-screen">
                     {webProject ? <WebMockup images={picturesUrl} /> : <PhoneMockup images={picturesUrl} />}
-                   
+
                     <div className="absolute flex w-full h-full">
                         <div className="flex-1 "></div>
                         <div className="flex-1 bg-blue-300 -z-10"></div>

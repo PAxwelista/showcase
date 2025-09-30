@@ -27,6 +27,7 @@ body {
 
 p{
     font-size: 1.2rem;
+    text-align: justify;
 }
 
 h1{
@@ -46,6 +47,7 @@ h2 {
 h3 {
     font-size: 1.8rem;
     font-weight: 400;
+    padding-bottom: 20px;
 }
 
 .loader {
