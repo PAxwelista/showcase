@@ -13,11 +13,11 @@ export const DropDown = ({children} : Props) => {
     };
 
     return (
-        <div>
+        <>
             <HeaderBtn onClick={handleOnClick}>=</HeaderBtn>
-            {showModal&&<div className="flex flex-col absolute  bg-red-200 right-2">
+            {showModal&&<div className="flex flex-col absolute bg-blue-300 right-2 p-2 rounded-xl right-5">
                 {children}
             </div>}
-        </div>
+        </>
     );
 };
