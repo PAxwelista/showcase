@@ -11,5 +11,6 @@
     "app_user_id" : "Utiliteur de l'app",
     "add" : "Ajouter",
     "alert_max_items" : "Maximum d'items atteint pour cette démo",
-    "alert_max_appUsers" : "Maximum d'utilisateur atteint pour cette démo"
+    "alert_max_appUsers" : "Maximum d'utilisateur atteint pour cette démo",
+    "format_error_input" : "Un champ est vide ou le champ quantité n'est pas un nombre"
 }

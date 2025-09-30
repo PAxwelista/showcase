@@ -11,7 +11,7 @@ export const Input = ({ title,name, value, onChange }: Props) => {
         <div className="flex m-2">
             <p className="mr-4 flex-1">{title} : </p>
             <input
-                className="flex-1 bg-stone-800 rounded-md"
+                className="flex-1 dark:bg-stone-800 px-3 border rounded-md"
                 name={name}
                 value={value}
                 onChange={onChange}

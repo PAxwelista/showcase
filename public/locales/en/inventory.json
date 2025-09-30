@@ -11,5 +11,6 @@
     "app_user_id" : "App user",
     "add" : "Add",
     "alert_max_items" : "Max items for this user for this demo",
-    "alert_max_appUsers" : "Max users for this demo"
+    "alert_max_appUsers" : "Max users for this demo",
+    "format_error_input" : "A input is empty or the quantity is not a number"
 }

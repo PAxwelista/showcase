@@ -1,5 +1,8 @@
+"use client";
+
 import { useT } from "@/app/i18n/client";
 import { Btn, Input } from ".";
+import { useState } from "react";
 
 type Props = {
     visible: boolean;
@@ -12,6 +15,8 @@ type Props = {
 export const NewItemModal = ({ visible, values, onChange, onClose, onAddItem }: Props) => {
     const { t } = useT("inventory");
 
+    const [errorMessage, setErrorMessage] = useState<string>("");
+
     const inputs = Object.entries(values).map(([key, value]) => (
         <Input
             key={key}
@@ -22,20 +27,37 @@ export const NewItemModal = ({ visible, values, onChange, onClose, onAddItem }: 
         />
     ));
 
+    const handleAddItem = () => {
+        setErrorMessage("");
+        if (
+            values.name === "" ||
+            values.quantity === "" ||
+            !Number.isInteger(+values.quantity) ||
+            values.app_user_id === ""
+        )
+            return setErrorMessage(t("format_error_input"));
+        onAddItem();
+    };
+
     return (
         visible && (
             <div className="fixed flex h-full w-full bg-black/50 justify-center items-center">
                 <div className="relative bg-white dark:bg-black border-1 p-10 rounded-lg">
                     <h2>{t("new_item")}</h2>
-                    <form className="flex flex-col" onSubmit={(e) => e.preventDefault()}>
+                    <form
+                        className="flex flex-col"
+                        onSubmit={e => e.preventDefault()}
+                    >
                         {inputs}
+                        {errorMessage && <p className="text-red-400">{errorMessage}</p>}
                         <Btn
                             className="mt-8"
-                            onClick={onAddItem}
+                            onClick={handleAddItem}
                         >
                             {t("add")}
                         </Btn>
                     </form>
+
                     <Btn
                         className="absolute right-2 top-4 h-8 w-8"
                         onClick={onClose}
