@@ -4,7 +4,7 @@ export type Item = {
     delete_at: Date | null;
     id: number;
     name: string;
-    options: {};
+    options: Record<string, unknown>;
     quantity: number;
 };
 

@@ -13,6 +13,7 @@ type Props = {
 export const WebMockup = ({ images }: Props) => {
     const items = images.map((image, i) => (
         <Image
+            key={i}
             src={image}
             alt={`screen-${i}`}
             width={320}
