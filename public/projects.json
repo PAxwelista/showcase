@@ -10,7 +10,7 @@
             "fr": "Cette application permet d’enregistrer les clients, de gérer leurs commandes en ajoutant facilement les produits souhaités et d’organiser les livraisons en optimisant automatiquement les trajets dans une zone donnée afin de gagner du temps et de réduire les coûts."
         },
         "webProject": false,
-        "skills": ["React Native", "MongoDB", "CSS", "TypeScript"],
+        "skills": ["React Native", "MongoDB", "CSS", "TypeScript", "Express"],
         "picturesUrl": [
             "/delithi/add-order.png",
             "/delithi/detail-delivery.png",
@@ -29,7 +29,7 @@
             "fr": "Ce site web propose une expérience de bataille navale en ligne où les joueurs peuvent s’affronter en temps réel, placer stratégiquement leurs navires et tenter de couler ceux de l’adversaire dans une interface interactive et dynamique."
         },
         "webProject": true,
-        "skills": ["NextJs", "TypeScript", "CSS", "React"],
+        "skills": ["NextJs", "TypeScript", "CSS", "React", "Express"],
         "picturesUrl": ["/naval_battle/game.png", "/naval_battle/home.png", "/naval_battle/join_game.png"]
     },
     {

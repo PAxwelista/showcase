@@ -1,11 +1,13 @@
 [
-    { "name": "NextJs", "pictureName": "nextjs.png" },
-    { "name": "NestJs", "pictureName": "nestjs.svg" },
-    { "name": "Tailwind", "pictureName": "tailwind.png" },
     { "name": "TypeScript", "pictureName": "typescript.svg" },
-    { "name": "CSS", "pictureName": "css.png" },
     { "name": "React", "pictureName": "react.png" },
     { "name": "React Native", "pictureName": "react-native.png" },
+    { "name": "CSS", "pictureName": "css.png" },
+    { "name": "Tailwind", "pictureName": "tailwind.png" },
+    { "name": "NextJs", "pictureName": "nextjs.png" },
+    { "name": "NestJs", "pictureName": "nestjs.svg" },
+    { "name": "Express", "pictureName": "express.png" },
     { "name": "MongoDB", "pictureName": "mongodb.png" },
     { "name": "PostgreSQL", "pictureName": "postgresql.png" }
+
 ]
