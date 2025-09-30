@@ -44,7 +44,7 @@
         },
         "webProject": true,
         "skills": ["NestJs", "TypeScript", "PostgreSQL"],
-        "picturesUrl": [],
+        "picturesUrl": ["/inventory/doc.png"],
         "href": "/inventory"
     },
     {
@@ -59,6 +59,6 @@
         },
         "webProject": true,
         "skills": ["Tailwind", "TypeScript", "React", "CSS", "NextJs"],
-        "picturesUrl": []
+        "picturesUrl": ["/showcase/about.png"]
     }
 ]
